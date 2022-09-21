@@ -4,101 +4,142 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="../assets/img/favicon.ico" />
+    
+<!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<!-- CSS -->
+      <link rel="stylesheet" href="../css/style.css" />
+
+<!-- Icons -->
+      <link rel="icon" href="./assets/img/Huella.ico" />
+
     <title>Contacto</title>
   </head>
+
+
   <body>
 
-    <div class="contenedor-contact">
-
-    <header class="header">
-      <div>
-        <img class="logo" src="../assets/img/Logo.png" alt="Logo perro" />
-      </div>
-      <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./nosotros.html">Acerca de nosotros</a></li>
-        <li class="servicios">
-          <a href="./servicios.html">Servicios</a>
-          <ul class="lista-servicios">
-            <li><a href="./corte.html">Corte</a></li>
-            <li><a href="./baño.html">Baño</a></li>
-            <li><a href="./pensión.html">Pensión</a></li>
-          </ul>
-        </li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </header>
-
-
-    <main>
-      
-      <section class="contact">
-        <h1>Contacto</h1>
-      <div class="form">
-        <form action="">
-          
-          <label for="">Nombre</label>
-          <input type="text" placeholder="nombre">
-          <label for="">Dirección</label>
-          <input type="text" placeholder="dirección">
-          <label for="">Teléfono</label>
-          <input type="number" placeholder="teléfono">
-          <label for="">Nombre mascota</label>
-          <input type="text" placeholder="nombre mascota">
-          <label for="">Raza</label>
-          <input type="text" placeholder="raza">
-          <label for="">Tamaño</label>
-     <div class="container">  
-      <input type="radio" name="tamanio" value="pequeña" />  
-      <label for="">pequeña</label>
-      <br>
-      <input type="radio" name="tamanio" value="mediana" />
-      <label for="">mediana</label>
-      <br>
-      <input type="radio" name="tamanio" value="grande" />
-      <label for="">grande</label>
-      <br>
-         
-      </div>
-
-        <input class="btn" type="submit" value="Enviar">
-        </form>
-      </div>
-    
-      
-  </section>
    
+      <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"> <img src="../assets/img/Logo.png" alt="Logo"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Acerca de nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./corte.html">Corte</a></li>
+                      <li><a class="dropdown-item" href="./baño.html">Baño</a></li>
+                      <li><a class="dropdown-item" href="./pensión.html">Pensión</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+
+    <main class="mainContact">
+
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                  <form class="form">
+                      <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="InputName" placeholder="nombre">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="InputAddrees" placeholder="dirección">
+                      </div>
+                      <div class="mb-3">
+                          <label class="form-label">Teléfono</label>
+                          <input type="text" class="form-control" id="InputPhone" placeholder="teléfono">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Nombre de la mascota</label>
+                          <input type="text" class="form-control" id="InputNamePet" placeholder="nombre mascota">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Raza</label>
+                          <input type="text" class="form-control" id="InputRaza" placeholder="raza">
+                        </div>
+                        <label class="form-label">Tamaño</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Selecciona su tamaño</option>
+                          <option value="1">Pequeña</option>
+                          <option value="2">Mediana</option>
+                          <option value="3">Grande</option>
+                        </select>
+                      <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+                    </form>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <section class="contacto">
+                <div class="cita">
+                  <h2>!Agenda tu cita¡</h2>
+                  <img class="imgWa" src="../assets/img/Icon_WhatsApp.png" alt="">
+                </div>
+                <div class="ubicacion">
+                  <h2>Ubicación</h2>  
+                  <img src="../assets/img/Ubicacion.jpg" alt="ubicacion">
+                </div>
+              </section>
+          </div>
+        </div>
+      </div>
     </main>
   
-    <section class="contacto">
-      
-      <div class="cita">
-        <h2>!Agenda tu cita¡</h2>
-        <img class="imgWa" src="../assets/img/Icon WA.png" alt="">
-      </div>
-      
-      <div class="ubicacion">
-        <h2>Ubicación</h2>  
-        <img src="../assets/img/map.jpg" alt="">
-      </div>
-  
-    </section>
+    
   
 
 
-    <footer class="footer">
-      <div class="footer-redes">
-        <img src="../assets/img/icons-fb.png" alt="facebook">
-        <img src="../assets/img/icons-wpp.png" alt="whatsApp">
+    <!-- footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <section class="footer col-12">
+          <div class="footer-redes">
+            <img src="../assets/img/Icon-fb.png" alt="facebook">
+            <img src="../assets/img/Icon-wpp.png" alt="whatsApp">
+          </div>
+          <div class="autor">
+            <h5>Copyright 2022 JAV-DEP</h5>
+          </div>
+        </section>
       </div>
-        <div class="autor">
-          <h5>Copyright 2022 JAV-DEP</h5>
-        </div>
-    </footer>
+    </div>
+  </footer>
 
-  </div>
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
   </body>
 </html>
