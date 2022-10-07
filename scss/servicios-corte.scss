@@ -1,0 +1,41 @@
+//Page Corte
+main{
+    .servicio-corte{
+        width: 100%;
+        padding: 10px;
+        h1{
+            background-color: #1f8a9a9b;
+            width: 100%;
+        }
+        h3{
+            padding-top: 15px;
+            text-align: center;
+            color: #660066;
+        }
+        .corte_info{    
+            margin-top: 15px;   
+            padding: 30px;         
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            .servicios{
+                img{
+                    width: 600px;
+                    height: 600px;
+                    margin: auto;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .information{
+                width: 600px;
+                p{
+                    font-size: 2rem;
+                    line-height: 2;
+                    text-align: center;
+                }
+            }
+        }
+}
+}

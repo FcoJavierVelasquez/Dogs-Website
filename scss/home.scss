@@ -1,0 +1,46 @@
+// Page Home
+.mainHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        height: 60vh;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .row {
+            display: flex;
+            .dog{
+                img{
+                    width: 800px;
+                    margin: auto;
+                    margin-left: 0;
+                    margin-right: auto;
+                    display: block;
+                    filter: drop-shadow(0 0 25px #c8ced4);
+                }
+            }
+            .slogan{
+             
+                h1{
+                    font-size: 5rem;
+                    color: #6f4d87;
+                    margin-top: 50px;
+                    text-align: center;
+                    animation-duration: 3.5s;
+                    animation-name: slidein;
+                    @keyframes slidein {
+                        from {
+                          margin-left: 100%;
+                          width: 300%
+                        }
+                      
+                        to {
+                          margin-left: 0%;
+                          width: 100%;
+                        }
+                      }
+                }
+            }
+          }
+    }
+}
