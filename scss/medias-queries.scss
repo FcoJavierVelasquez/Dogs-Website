@@ -1,0 +1,459 @@
+//Medias Queries Home
+@media (max-width: 1200px){
+    .mainHome{
+        .container{
+            .row{
+                .dog{  
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 700px;
+                        margin: auto;
+                        margin-left: -100px;
+                    }
+                }
+                .slogan{
+                    h1{
+                       font-size: 3rem;
+                       color: #6f4d87;
+                    }
+               }
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .mainHome{
+        display: flex;
+        width: 100%;
+        height: auto;
+        .container{
+            .row{   
+                .dog{  
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 650px;
+                        margin: auto;
+                        margin-left: -100px;
+                    }
+                }
+                .slogan{
+                    
+                     h1{
+                        
+                        font-size: 2.5rem;
+                        color: #083579;
+                     }
+                }
+             }
+        }
+    }
+}
+
+@media (max-width: 760px){
+    .mainHome{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .container{
+            .row{
+                display: flex;
+                justify-content: center;
+                .dog{
+                    
+                    img{
+                        width: 600px;
+                        margin: auto;
+                        margin-left: -80px;
+                    }
+                }
+                .slogan{
+                     h1{
+                        font-size: 2.5rem;
+                        color: #6f4d87;
+                     }
+                }
+             }
+        }
+    }
+}
+@media (max-width: 480px){
+    .mainHome{
+        display: flex;
+        width: 100%;
+        height: auto;
+        .container{
+            .row{
+                .dog{
+                    
+                    img{
+                        width: 450px;
+                        margin: auto;
+                        margin-left: -60px;
+                    }
+                }
+                .slogan{
+                     h1{
+                        font-size: 2.3rem;
+                        color: #083579;
+                     }
+                }
+             }
+        }
+    }
+}
+
+
+//Medias Queries Nosotros
+@media (max-width: 1200px){
+    .mainAbout{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .section{
+            .nosotros{
+               padding: 30px;
+                height: 650px;
+                gap: 20px;
+                .descripcion{
+                    width: 100%;
+                    padding: 10px;
+                    h3{
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        margin-top: 10px;
+                        padding: 10px;
+                        font-size: 1rem;
+                    }
+                }
+                .img-exp{
+                    width: 350px;
+                    height: 350px;
+                    margin: auto;
+                    padding: 5px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    box-shadow: 15px 5px 5px rgba(22, 77, 113, 0.301);
+                
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 760px){
+    .mainAbout{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .section{
+            .nosotros{
+               padding: 30px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                .descripcion{
+                    width: 100%;
+                    h3{
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        margin-top: 10px;
+                        font-size: 1rem;
+                    }
+                }
+                .img-exp{
+                    width: 350px;
+                    height: 350px;
+                    margin: auto;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    box-shadow: 15px 5px 5px rgba(22, 77, 113, 0.301);
+                
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .mainAbout{
+        .section{
+            .nosotros{
+               padding: 30px;
+                height: auto;
+                .descripcion{
+                    width: 100%;
+                    h1{
+                        font-size: 2.5rem;
+                    }
+                    h3{
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        margin-top: 10px;
+                        font-size: 1rem;
+                    }
+                }
+                .img-exp{
+                    width: 280px;
+                    height: 280px;
+                    margin: auto;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    box-shadow: 15px 5px 5px rgba(22, 77, 113, 0.301);
+                
+                }
+            }
+            
+        }
+    }
+}
+//Medias Queries Servicios
+@media (max-width: 1200px){
+    main{
+        .services{
+            height: auto;
+            .img-servicios{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px){
+    main{
+        .services{
+            .img-servicios{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+//Page baño
+@media (max-width: 1200px){
+    main{ 
+     .servicio-baño{
+         .baño_info{
+             .servicios{
+                 img{
+                     width: 400px;
+                     border-radius: 50%;
+                 }
+             }
+             .information{
+                 width: 400px;
+                 p{
+                     font-size: 1.5rem;
+                     margin-top: 20px;
+                 }
+             }
+         }
+ 
+     }
+ }
+ }
+ @media (max-width: 760px){
+    main{ 
+        .servicio-baño{
+            .baño_info{
+                display: flex;
+                flex-direction: column;
+                .information{
+                    width: 90%;
+                    p{
+                        font-size: 1.2rem;
+                        margin-top: 20px;
+                    }
+                }
+            }
+    
+        }
+    }
+ }
+//Page corte
+ @media (max-width: 1200px){
+    main{ 
+     .servicio-corte{
+         .corte_info{
+             .servicios{
+                 img{
+                     width: 400px;
+                     height: 400px;
+                     border-radius: 50%;
+                 }
+             }
+             .information{
+                 width: 400px;
+                 p{
+                     font-size: 1.5rem;
+                     margin-top: 20px;
+                 }
+             }
+         }
+ 
+     }
+ }
+ }
+ @media (max-width: 760px){
+    main{ 
+        .servicio-corte{
+            .corte_info{
+                display: flex;
+                flex-direction: column;
+                .information{
+                    width: 90%;
+                    p{
+                        font-size: 1.2rem;
+                        margin-top: 20px;
+                    }
+                }
+            }
+    
+        }
+    }
+ }
+ @media (max-width: 480px){
+    main{ 
+     .servicio-corte{
+        .corte_info{    
+            .servicios{
+                img{
+                    width: 300px;
+                    height: 300px;
+                    margin: auto;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+     }
+ }
+}
+
+//Page pension
+@media (max-width: 1200px){
+    main{ 
+     .servicio-pension{
+         .pension_info{
+             .servicios{
+                 img{
+                     width: 400px;
+                     height: 400px;
+                     border-radius: 50%;
+                 }
+             }
+             .information{
+                 width: 400px;
+                 p{
+                     font-size: 1.5rem;
+                     margin-top: 20px;
+                 }
+             }
+         }
+ 
+     }
+ }
+ }
+ @media (max-width: 760px){
+    main{ 
+        .servicio-pension{
+            .pension_info{
+                display: flex;
+                flex-direction: column;
+                .information{
+                    width: 90%;
+                    p{
+                        font-size: 1.2rem;
+                        margin-top: 20px;
+                    }
+                }
+            }
+    
+        }
+    }
+ }
+ @media (max-width: 480px){
+    main{ 
+     .servicio-pension{
+        .pension_info{    
+            .servicios{
+                img{
+                    width: 300px;
+                    height: 300px;
+                    margin: auto;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+     }
+ }
+}
+//Medias Queries Contacto
+@media (max-width: 1024px){
+.mainContact{
+    .container{
+        .form{
+            width: 100%;
+            padding: 30px;
+            
+        }
+    }
+    .contacto{
+        .cita{
+            padding: 20px;
+            h2{
+                font-size: 3rem;
+            }
+            img{
+                width: 80px;
+            }
+        }
+        .ubicacion{
+            img{
+                width: 300px;
+            } 
+        }
+    }
+   
+}
+}
+@media (max-width: 480px){
+    .mainContact{
+        .container{
+            .form{
+                width: 90%;
+                padding: 20px;
+                
+            }
+        }
+        .contacto{
+            .cita{
+                padding: 20px;
+                h2{
+                    font-size: 2.5rem;
+                }
+                img{
+                    width: 60px;
+                }
+            }
+            .ubicacion{
+                img{
+                    width: 250px;
+                } 
+            }
+        }
+       
+    }
+}
+
